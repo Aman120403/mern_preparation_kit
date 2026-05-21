@@ -85,11 +85,7 @@ const Home = () => {
 
             />
         </main>
-        <div className="relative h-screen overflow-hidden bg-black">
-
-  
-
-</div>
+        
 
         <h1
   className="fixed top-0 left-1/2 -translate-x-1/2
