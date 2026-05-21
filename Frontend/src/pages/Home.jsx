@@ -46,8 +46,8 @@ const Home = () => {
             </div>
         </header>
         
-        <div className="p-3 border-b border-gray-800 flex justify-center items-center text-center">
-            <p className="text-gray-400 font-bold text-lg italic max-w-2xl">
+        <div className="bg-gradient-to-r from-blue-600/20 via-purple-600/10 to-pink-600/10 border-blue-500/20 p-3 flex justify-center items-center text-center">
+            <p className=" text-gray-400 font-bold text-lg italic max-w-2xl">
                 “The time will pass no matter what you do, so choose to spend it learning things that make you better.”
             </p>
         </div>
