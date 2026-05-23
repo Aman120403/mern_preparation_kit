@@ -4,7 +4,7 @@ import ReactPhoto from "../assets/reactLogo.png"
 import MongoPhoto from "../assets/MongoDbLogo.png"
 import ExpressPhoto from "../assets/Ex-Logo.png"
 import NodePhoto from "../assets/NodeJs_Logo.png"
-
+import BgImage from "../assets/bgImage.png"
 
 const Home = () => {
     const navigate = useNavigate();
@@ -61,108 +61,108 @@ const Home = () => {
         
 
         <main className='bg-gradient-to-r from-blue-600/20 via-purple-600/10 to-pink-600/10 border-blue-500/20 p-3 border-b'>
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 place-items-center">
 
-        {/* MongoDB */}
-        <div className="flex flex-col items-center gap-6 w-full">
-            <img 
-                className="w-64 h-64 sm:w-44 sm:h-44 mt-4 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]" 
-                src={MongoPhoto} 
-                alt="MongoDB pic"
-            />
-            <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
-                <span className="text-purple-400">db</span>.
-                <span className="text-yellow-300">users</span>.
-                <span className="text-green-400">insertOne</span>
-                {"({\n"}
-                {"  "}<span className="text-orange-400">name</span>:{" "}
-                <span className="text-green-300">"Mern"</span>,{"\n"}
-                {"  "}<span className="text-orange-400">role</span>:{" "}
-                <span className="text-green-300">"Developer"</span>{"\n"}
-                {"  )\n"}
-                {"}"}
-            </pre>
-        </div>
+                {/* MongoDB */}
+                <div className="flex flex-col items-center gap-6 w-full">
+                    <img 
+                        className="w-64 h-64 sm:w-44 sm:h-44 mt-4 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]" 
+                        src={MongoPhoto} 
+                        alt="MongoDB pic"
+                    />
+                    <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
+                        <span className="text-purple-400">db</span>.
+                        <span className="text-yellow-300">users</span>.
+                        <span className="text-green-400">insertOne</span>
+                        {"({\n"}
+                        {"  "}<span className="text-orange-400">name</span>:{" "}
+                        <span className="text-green-300">"Mern"</span>,{"\n"}
+                        {"  "}<span className="text-orange-400">role</span>:{" "}
+                        <span className="text-green-300">"Developer"</span>{"\n"}
+                        {"  )\n"}
+                        {"}"}
+                    </pre>
+                </div>
 
-        {/* ExpressJS */}
-        <div className="flex flex-col items-center gap-6 w-full">
-            <img 
-                className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
-                src={ExpressPhoto} 
-                alt="ExpressJs pic"
-            />
-            <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
-                <span className="text-yellow-300">app</span>.
-                <span className="text-cyan-400">get</span>
-                {"("}
-                <span className="text-green-300">"/"</span>, (req, res) =&gt; {"{\n"}
-                {"  "}res.
-                <span className="text-cyan-400">send</span>
-                ({"\n"}
-                {"    "}
-                <span className="text-green-300">"Hello Express"</span>
-                {"\n"}
-                {"  )"}{"\n"}
-                {"})"}
-            </pre>
-        </div>
+                {/* ExpressJS */}
+                <div className="flex flex-col items-center gap-6 w-full">
+                    <img 
+                        className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
+                        src={ExpressPhoto} 
+                        alt="ExpressJs pic"
+                    />
+                    <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
+                        <span className="text-yellow-300">app</span>.
+                        <span className="text-cyan-400">get</span>
+                        {"("}
+                        <span className="text-green-300">"/"</span>, (req, res) =&gt; {"{\n"}
+                        {"  "}res.
+                        <span className="text-cyan-400">send</span>
+                        ({"\n"}
+                        {"    "}
+                        <span className="text-green-300">"Hello Express"</span>
+                        {"\n"}
+                        {"  )"}{"\n"}
+                        {"})"}
+                    </pre>
+                </div>
 
-        {/* React */}
-        <div className="flex flex-col items-center gap-6 w-full">
-            <img 
-                className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
-                src={ReactPhoto} 
-                alt="React pic"
-            />
-            <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
-                <span className="text-purple-400">function</span>{" "}
-                <span className="text-yellow-300">App</span>()
-                {" {\n"}
-                {"  "}
-                <span className="text-purple-400">return</span>{" ("}{"\n"}
-                {"    "}
-                <span className="text-blue-400">&lt;h1&gt;</span>
-                Hello React
-                <span className="text-blue-400">&lt;/h1&gt;</span>
-                {"\n"}
-                {"  )\n"}
-                {"}"}
-            </pre>
-        </div>
+                {/* React */}
+                <div className="flex flex-col items-center gap-6 w-full">
+                    <img 
+                        className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
+                        src={ReactPhoto} 
+                        alt="React pic"
+                    />
+                    <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
+                        <span className="text-purple-400">function</span>{" "}
+                        <span className="text-yellow-300">App</span>()
+                        {" {\n"}
+                        {"  "}
+                        <span className="text-purple-400">return</span>{" ("}{"\n"}
+                        {"    "}
+                        <span className="text-blue-400">&lt;h1&gt;</span>
+                        Hello React
+                        <span className="text-blue-400">&lt;/h1&gt;</span>
+                        {"\n"}
+                        {"  )\n"}
+                        {"}"}
+                    </pre>
+                </div>
 
-        {/* NodeJS */}
-        <div className="flex flex-col items-center gap-6 w-full">
-            <img
-                src={NodePhoto}
-                alt="NodeJs pic"
-                className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
-            />
-            <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
-                <span className="text-purple-400">const</span>{" "}
-                <span className="text-yellow-300">http </span>
-                = require
-                {"("}
-                <span className="text-yellow-300">"http"</span>
-                {")"}
-                {"\n"}
-                <span className="text-yellow-300">http</span>.
-                <span className="text-cyan-400">createServer</span>
-                {"("}{"\n"}
-                {"(req, res) => {\n"}
-                {"  "}res.
-                <span className="text-cyan-400">end</span>
-                {"("}
-                <span className="text-green-300">"Hello Node"</span>
-                {")"}
-                {"\n"}
-                {"})."}
-                <span className="text-cyan-400">listen</span>
-                {"(3000)"}
-            </pre>
-        </div>
+                {/* NodeJS */}
+                <div className="flex flex-col items-center gap-6 w-full">
+                    <img
+                        src={NodePhoto}
+                        alt="NodeJs pic"
+                        className="w-64 h-64 sm:w-44 mt-4 sm:h-44 xl:w-64 xl:h-64 object-cover rounded-full ring-4 ring-blue-500 hover:ring-green-500 ring-offset-4 ring-offset-gray-900 cursor-pointer hover:scale-105 transition duration-200 hover:shadow-[0_0_40px_#22c55e]"
+                    />
+                    <pre className="bg-gray-900 text-green-400 p-6 rounded-xl text-left font-mono whitespace-pre-wrap text-lg w-full">
+                        <span className="text-purple-400">const</span>{" "}
+                        <span className="text-yellow-300">http </span>
+                        = require
+                        {"("}
+                        <span className="text-yellow-300">"http"</span>
+                        {")"}
+                        {"\n"}
+                        <span className="text-yellow-300">http</span>.
+                        <span className="text-cyan-400">createServer</span>
+                        {"("}{"\n"}
+                        {"(req, res) => {\n"}
+                        {"  "}res.
+                        <span className="text-cyan-400">end</span>
+                        {"("}
+                        <span className="text-green-300">"Hello Node"</span>
+                        {")"}
+                        {"\n"}
+                        {"})."}
+                        <span className="text-cyan-400">listen</span>
+                        {"(3000)"}
+                    </pre>
+                </div>
 
-    </div>
-</main>
+            </div>
+        </main>
         <footer>
             <h4 className='text-white p-4'>Ab karo MERN stack interview ki taiyari</h4>
         </footer>
@@ -173,8 +173,10 @@ const Home = () => {
             className="fixed top-0 left-1/2 -translate-x-1/2 text-xl font-bold text-purple-400 text-center
                     animate-[moveDown_7s_linear_infinite] pointer-events-none z-50"
             >
+            
             Learn MERN the Smart Way - Interview-Focused Preparation
         </h1>
+        <img src={BgImage} alt="bgImage"/>
     </div>
   )
 }
