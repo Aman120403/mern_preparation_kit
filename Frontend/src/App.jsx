@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
+import Topics from './pages/Topic'
 const App = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/login"  element={<Login/>}/>
           <Route path="/signup"  element={<Signup/>}/>
           <Route path="/dashboard"  element={<Dashboard/>}/>
+          <Route path="/topics" element={<Topics />} />
         </Routes>
       </BrowserRouter>
         
