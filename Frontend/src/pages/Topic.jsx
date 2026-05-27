@@ -38,10 +38,10 @@ const difficultyColor = {
 const Topics = () => {
   const navigate = useNavigate()
 
-  const [activeCategory,   setActiveCategory]   = useState('All')
+  const [activeCategory, setActiveCategory]  = useState('All')
   const [activeDifficulty, setActiveDifficulty] = useState('All')
-  const [search,           setSearch]           = useState('')
-  const [bookmarks,        setBookmarks]        = useState([])
+  const [search, setSearch] = useState('')
+  const [bookmarks, setBookmarks] = useState([])
 
   const categories  = ['All', 'MongoDB', 'Express', 'React', 'Node']
   const difficulties = ['All', 'beginner', 'intermediate', 'advanced']
