@@ -175,13 +175,13 @@ const Home = () => {
         
         
 
-        <h1
+        {/* <h1
             className="fixed top-0 left-1/2 -translate-x-1/2 text-xl font-bold text-purple-400 text-center
                     animate-[moveDown_7s_linear_infinite] pointer-events-none z-50"
             >
             
             Learn MERN the Smart Way - Interview-Focused Preparation
-        </h1>
+        </h1> */}
         <img src={BgImage} alt="bgImage"/>
     </div>
   )
